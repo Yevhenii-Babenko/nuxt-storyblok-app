@@ -9,8 +9,8 @@
             >
           </li>
           <li class="navbar__item">
-            <NuxtLink class="navbar__link" :to="{ name: 'posts' }"
-              >All posts</NuxtLink
+            <NuxtLink class="navbar__link" :to="{ name: 'about' }"
+              >About</NuxtLink
             >
           </li>
         </ul>
