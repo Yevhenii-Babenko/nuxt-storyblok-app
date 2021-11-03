@@ -1,5 +1,6 @@
 export default {
-  target: 'static',
+  ssr: false,
+  target: 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-storyblok-app',
@@ -34,6 +35,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,7 +43,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     ['storyblok-nuxt', {
-      accessToken: 'ECbkgkbnaafbGA4vVUkqQQtt',
+      accessToken: process.env.STORYBLOK_KEY,
       cacheProvider: 'memory'
     }]
   ],

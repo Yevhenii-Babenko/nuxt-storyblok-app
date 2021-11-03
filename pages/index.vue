@@ -12,7 +12,7 @@
     <NuxtLink
       v-for="post in posts"
       :key="post.id"
-      :to="{ name: 'postId', params: { postId: post.slug } }"
+      :to="{ name: 'postId', params: { postId: post.id } }"
     >
       <section>
         <h1>{{ post.title }}</h1>
