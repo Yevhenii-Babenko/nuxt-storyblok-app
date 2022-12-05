@@ -1,6 +1,6 @@
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
-[plugins.inputs]
-buildDir = "dist"
-filePath = "dist/sitemap.xml"
+#[plugins.inputs]
+#buildDir = "dist"
+#filePath = "dist/sitemap.xml"
